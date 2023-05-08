@@ -1,0 +1,81 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "date": "2022-05-12T10:30:00Z",
+      "items": [
+        {
+          "id": 101,
+          "name": "Samsung Galaxy A52s 5G",
+          "price": 33999,
+          "quantity": 1
+        },
+        {
+          "id": 102,
+          "name": "Apple iPhone SE (2020)",
+          "price": 32999,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 99997,
+      "discount": 1000,
+      "total": 98997,
+      "status": "Pending",
+      "payment": {
+        "method": "Credit Card",
+        "transactionId": "1234567890",
+        "status": "Success"
+      },
+      "shipping": {
+        "name": "John Doe",
+        "address": "123 Main St, Bangalore",
+        "phone": "+91 9876543210",
+        "status": "Shipped",
+        "trackingId": "A1234567890"
+      }
+    },
+    {
+      "id": 2,
+      "date": "2022-05-10T14:20:00Z",
+      "items": [
+        {
+          "id": 103,
+          "name": "HP Pavilion Gaming Laptop",
+          "price": 74999,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 74999,
+      "discount": 0,
+      "total": 74999,
+      "status": "Delivered",
+      "payment": {
+        "method": "Net Banking",
+        "transactionId": "0987654321",
+        "status": "Success"
+      },
+      "shipping": {
+        "name": "Jane Doe",
+        "address": "456 Main St, Chennai",
+        "phone": "+91 9876543210",
+        "status": "Delivered",
+        "trackingId": "B1234567890"
+      }
+    }
+  ],
+  "payment": [
+    {
+      "orderId": "F45678901234",
+      "paymentMethod": "",
+      "amount": 2499.99,
+      "status": "Success",
+      "transactionId": ""
+    }
+  ],
+  "users": [
+    {
+      "username": "drindia20",
+      "password": "Apple"
+    }
+  ]
+}

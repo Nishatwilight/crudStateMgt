@@ -1,0 +1,41 @@
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h5 class="m-0">Payment Details</h5>
+        </div>
+        <div class="card-body" >
+          <form *ngFor="let pay of payment$ | async">
+            <div class="mb-3" >
+              <label for="cardNumber" class="form-label">OrderID</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" value={{pay?.orderId}}>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="expiryDate" class="form-label">Payment Type</label>
+                <input type="text" class="form-control" id="expiryDate" placeholder="Enter the payment Type">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cvv" class="form-label">Amount</label>
+                <input type="text" class="form-control" id="cvv" placeholder="" value={{pay.amount}}>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="cardHolderName" class="form-label">Cardholder Name</label>
+              <input type="text" class="form-control" id="cardHolderName" placeholder="Enter the Name">
+            </div>
+            <div class="mb-3">
+              <label for="a" class="form-label">TransactionID</label>
+              <input type="text" class="form-control" id="a" placeholder="Enter your ATM CARD number">
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="submit">Make Payment</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
